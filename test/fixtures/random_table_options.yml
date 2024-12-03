@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  random_table: one
+  text: MyString
+  option_start: 1
+  option_end: 1
+
+two:
+  random_table: two
+  text: MyString
+  option_start: 1
+  option_end: 1

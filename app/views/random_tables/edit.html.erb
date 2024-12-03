@@ -1,0 +1,12 @@
+<% content_for :title, "Editing random table" %>
+
+<h1>Editing random table</h1>
+
+<%= render "form", random_table: @random_table %>
+
+<br>
+
+<div>
+  <%= link_to "Show this random table", @random_table %> |
+  <%= link_to "Back to random tables", random_tables_path %>
+</div>

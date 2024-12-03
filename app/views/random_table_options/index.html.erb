@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Random table options" %>
+
+<h1>Random table options</h1>
+
+<div id="random_table_options">
+  <% @random_table_options.each do |random_table_option| %>
+    <%= render random_table_option %>
+    <p>
+      <%= link_to "Show this random table option", random_table_option %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New random table option", new_random_table_option_path %>

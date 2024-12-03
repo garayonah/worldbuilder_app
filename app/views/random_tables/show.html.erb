@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @random_table %>
+
+<div>
+  <%= link_to "Edit this random table", edit_random_table_path(@random_table) %> |
+  <%= link_to "Back to random tables", random_tables_path %>
+
+  <%= button_to "Destroy this random table", @random_table, method: :delete %>
+</div>
