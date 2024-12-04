@@ -14,4 +14,16 @@
     <%= random_table.die %>
   </p>
 
+  <table>
+    <tr>
+      <th>D<%= random_table.die %></th>
+      <th>Options</th>
+    </tr>
+    <% random_table.options.each do |option| %>
+    <tr>
+      <td><%= option.die_display %></td>
+      <td><%= option.text %></td>
+    </tr>
+    <% end %>
+  </table>
 </div>

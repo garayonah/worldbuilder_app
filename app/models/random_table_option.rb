@@ -15,6 +15,10 @@ class RandomTableOption < ApplicationRecord
     option_start..option_end
   end
 
+  def die_display
+    option_start==option_end ? option_start : "#{option_start}-#{option_end}"
+  end
+
   def contains?(num)
     range.include? num    
   end
